@@ -8,7 +8,6 @@ const Search = ({ artistName, onSubmit, onChange  }) => (
   </form>
 );
 
-
 Search.propTypes = {
   artistName: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired,

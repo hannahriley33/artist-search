@@ -1,22 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Artist = ({ artistName }) => {
-  const albumElements = albums.map(album => (
-    <li key={album.alb}
-  ))
-  
-  <section>
-    <h3>Albums by {artistName}</h3>
-
-  </section>
-};
-
-Artist.propTypes = {
-  artistName: PropTypes.string.isRequired,
-  artistId: PropTypes.string.isRequired
+  return (
+    <Link to={`/artists/${artistName}`}>
+      <p>{artistName}</p>
+    </Link>
+  );
 };
 
 export default Artist;
 
-
+Artist.propTypes = {
+  artistName: PropTypes.string.isRequired
+};
