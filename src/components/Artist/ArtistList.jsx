@@ -6,7 +6,7 @@ import Artist from './Artist.jsx';
 const ArtistList = ({ artists }) => {
   console.log(artists);
   const matchedArtists = artists.map(artist => (
-    <li key={artist.name}>
+    <li key={artist.id}>
       <Artist artistName={artist.artistName} />
     </li>
   ));
