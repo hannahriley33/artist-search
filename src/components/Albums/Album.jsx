@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Album = ({ artistName, artistAlbums }) => {
   //map through albums
-  
+
   return (
     <Link to={`/artists/${artistName}/${albumTitle}`}>
       <p>{albumTitle}</p>
@@ -22,3 +22,4 @@ Album.propTypes = {
 };
 
 export default Album;
+//
